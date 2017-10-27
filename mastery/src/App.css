@@ -1,28 +1,140 @@
 .App {
   text-align: center;
 }
+.app-title{
+  font-size: 36px;
+  color: black;
+  text-shadow: 1px 1px #fe7979;
+  font-family: Helvetica;
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
+
+
+
+
+
+
+/* CLASS COMPONENT */
+#class-flexbox1{
+  height: 100px;
+  width: 100px;
+  background: red;
+}
+
+#class-flexbox2{
+  height: 100px;
+  width: 100px;
+  background: blue;
+}
+
+#class-flexbox3{
+  height: 100px;
+  width: 100px;
+  background: green;
+}
+
+#class-flexbox4{
+  height: 100px;
+  width: 100px;
+  background: yellow;
+}
+.class-flexbox-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.class-flexbox-container > div{
+  display: flex;
+}
+.class-flexbox-container > div div{
+  margin: 10px;
+}
+.class-flexbox-container > div div + div {
+  border-radius: 50px;
+}
+
+.app-title{
+  font-weight: bold
+}
+.class-background_image{
+  background: url('http://icons.iconarchive.com/icons/icons-land/metro-raster-sport/128/Trophy-icon.png');
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-top: 15px;
+  background-size: 100px;
+  background-repeat: no-repeat;
   padding: 20px;
+
+}
+div.class-box-sizing-container {
+  margin: auto;
+  width: 50%;
+  border: 3px solid red;
+  height: 100%;
+
+}
+
+div.boxes {
+  box-sizing: border-box;
+  width: 100%;
+  border: 10px solid green;
+  float: center;
+  margin: auto;
+  padding: 15px;
+}
+.class-position{
+  height: 150px;
+  width: 150px;
+  position: relative;
+  float: right;
+  margin-right: 50px;
+margin-top: 50px;
+background: blue;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.input-dis:disabled{
+  background: red;
+}
+.button-focus:focus{
+background: green;
+}
+.button-hover:hover{
+width: 100px;
+}
+.button-nth-child:nth-child(4){
+  width: 300px;
+background: red;
+color: white
+
+}
+.class-animations{
+  height: 100px;
+  width: 100px;
+  background: linear-gradient(yellow, red);
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  margin: auto;
+  -webkit-animation: COOLTHINGSSPIN 5s infinite;
+  transition: width 1s height 1s;
+}
+.class-animations:hover{
+width:200px;
+height: 200px;
+box-shadow: 10px 10px 5px #888888;
 }
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
+@keyframes COOLTHINGSSPIN {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
