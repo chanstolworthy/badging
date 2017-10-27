@@ -27,5 +27,6 @@
   "main": "server/server.js",
   "devDependencies": {},
   "author": "",
+  "proxy": "http://localhost:3000",
   "license": "ISC"
 }

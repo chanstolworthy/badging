@@ -1,0 +1,22 @@
+.add-item-container{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+.add-item-inputs{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.map-items-container{
+    width: 100px;
+    height: 100px;
+    background: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
