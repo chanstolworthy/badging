@@ -25,3 +25,6 @@ const port = 3000;
 app.listen(port, ()=>{
     console.log(port)
 })
+
+// DIFFERENT DATATYPES: when you specify the data types, it will specify whether how the data is imputed unto your table. Different data types will take up different amounts of storage.
+

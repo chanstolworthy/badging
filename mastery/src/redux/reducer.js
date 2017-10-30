@@ -12,6 +12,7 @@ var initialState ={
     allItems:[],
     currentItem:'',
     currentItemPrice:'',
+    name:'hello'
 }
 
 export default function reducer(state = initialState, action){

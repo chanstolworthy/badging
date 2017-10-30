@@ -4,6 +4,7 @@ import App from '../src/App'
 import AddItem from './components/AddItem'
 import Class from './components/class'
 const Props = require('./components/Props')
+const addName =require('./components/addname')
 
 
 
@@ -20,6 +21,7 @@ export default(
                 </App>
             )
         }} />
+        <Route path to='/add-items/:name' component={addName} />
         
     </Switch>
 )

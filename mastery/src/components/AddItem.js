@@ -3,7 +3,7 @@ import './addItem.css'
 import { connect } from 'react-redux'
 import { addItemCurrent, addItemCurrentPrice } from '../redux/reducer'
 import axios from 'axios'
-import {Link} from 'react-router'
+import {Link} from 'react-router-dom'
 import Props from './Props'
 const Render = require('./render')
 
@@ -55,7 +55,9 @@ class AddItem extends Component {
             this.setState({
                 allItems: response.data
             })
-    })
+        })
+        
+
 }
 
 changeName(id){
@@ -94,6 +96,10 @@ makeAlert(){
         return (
             <div>
                 <div className='add-item-container'>
+                    <Link to={`/add-item/${this.props.name}`} >HELLO</Link>
+                    {/* <Link to={`/add-item/${this.props.match.params.name}`} >HELLO2</Link> */}
+             
+
                     <div>Adding Items</div>
                     <div className='add-item-inputs'>
                         <input placeholder='item name' onChange={(e)=>{this.addItemName(e.target.value)}}/>
@@ -114,7 +120,7 @@ makeAlert(){
         )
     }
 }
-function mapStateToProps(state) {
+function mapStateToProps(state, ownProps) {
     return state
 }
 export default connect(mapStateToProps, {addItemCurrent, addItemCurrentPrice})(AddItem);
