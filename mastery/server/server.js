@@ -29,3 +29,4 @@ app.listen(port, ()=>{
 // DIFFERENT DATATYPES: when you specify the data types, it will specify whether how the data is imputed unto your table. It is important to make sure that if you change the specific data type after your created a table that the new one mimics the previous or else it will not be able to read the previous data and will not allow a change in the data type.  Different data types will take up different amounts of storage.
 // I chose to use VARCHAR(50) in my columns instead of text because it takes up almost half of the data space than normal text does.
 
+// When we declare the doc type, we are telling the browser how to read the file. Since html, js, css and other types need to be processed and rendered differently, we declare the doc type. at the top of the documents. the extension on the end of a file is also an indication of the type of document it is. 
