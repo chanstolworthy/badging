@@ -60,6 +60,13 @@ class AddItem extends Component {
 
 }
 
+
+
+
+componentWillReceiveProps(){
+    alert("Hello there")
+}
+
 changeName(id){
     let data={
         id: id,

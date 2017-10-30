@@ -17,11 +17,11 @@ export default(
                     <Switch>
                         {Props}
                     <Route path='/add-item' component={AddItem} />
+                    <Route path to='/add-item/:name' component={addName} />
                     </Switch>
                 </App>
             )
         }} />
-        <Route path to='/add-items/:name' component={addName} />
         
     </Switch>
 )
